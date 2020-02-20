@@ -32,6 +32,8 @@ public class NextColor extends CommandBase {
   private final Color kRedTarget = ColorMatch.makeColor(0.561, 0.232, 0.114);
   private final Color kYellowTarget = ColorMatch.makeColor(0.361, 0.524, 0.113);
 
+  private final boolean finished = false;
+
   public NextColor() {
     // Use addRequirements() here to declare subsystem dependencies.
   }
@@ -82,6 +84,6 @@ public class NextColor extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return false;
+    return finished;
   }
 }

@@ -42,8 +42,8 @@ public class DriveCommand extends CommandBase {
     double leftStickY = GetDriverRawAxis(Constants.LEFT_STICK_Y);
     double rightStickY = GetDriverRawAxis(Constants.RIGHT_STICK_Y);
 
-    m_driveTrain.setLeftMotor(leftStickY*0.75);
-    m_driveTrain.setRightMotor(rightStickY*0.75);
+    m_driveTrain.setLeftMotor(leftStickY*0.80);
+    m_driveTrain.setRightMotor(rightStickY*0.80);
   }
 
   // Called once the command ends or is interrupted.
